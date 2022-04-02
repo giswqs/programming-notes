@@ -3,20 +3,28 @@
 
 format: jb-book
 root: index
-chapters:
-  - file: book/markdown
-  - file: book/notebooks
-  - file: book/bibliography
-
-# Or you organize the TOC by parts
-
-# parts:
-#   - caption: Chapters
-#     numbered: true
-#     maxdepth: 2
-#     chapters:
-#       - file: book/markdown
-#       - file: book/notebooks
-#   - caption: Appendices
-#     chapters:
-#       - file: book/bibliography
+parts:
+  - caption: Software Tools
+    numbered: true
+    maxdepth: 2
+    chapters:
+      - file: book/git
+      - file: book/colab
+      - file: book/vscode
+      - file: book/markdown
+      - file: book/notebooks
+  - caption: Python
+    numbered: true
+    maxdepth: 2
+    chapters:
+      - file: book/geopython
+      - file: book/gee
+      - file: book/pc
+  - caption: Linux
+    numbered: true
+    maxdepth: 2
+    chapters:
+      - file: book/linux
+  - caption: Appendices
+    chapters:
+      - file: book/bibliography
